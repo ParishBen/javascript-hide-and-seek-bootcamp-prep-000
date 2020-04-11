@@ -4,7 +4,7 @@ function getFirstSelector(s) {
 function nestedTarget(){
   return document.querySelector('#nested .target');
 }
-deepestChild(){
+function deepestChild(){
   
   let grandNode = document.getElementById('grand-node');
   let childOne = grandNode.children[0];
