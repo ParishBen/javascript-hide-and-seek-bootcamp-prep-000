@@ -10,10 +10,10 @@ deepestChild(){
   let childOne = grandNode.children[0];
  
   while (childOne) {
-    node = childOne;
-    childOne = node.children[0];
+    grandNode = childOne;
+    childOne = grandNode.children[0];
   }
  
-  return node;
+  return grandNode;
 
 }
