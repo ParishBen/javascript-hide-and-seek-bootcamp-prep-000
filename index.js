@@ -17,3 +17,16 @@ function deepestChild(){
   return grandNode;
 
 }
+
+
+function increaseRankBy(n) {
+  const allRankedLists = document.querySelectorAll('.ranked-list');
+ 
+  for (let i = 0, l = allRankedLists.length; i < l; i++) {
+    let allChildren = allRankedLists[i].children;
+ 
+    for (let r = 0, len = allChildren.length; r < len; j++) {
+      allChildren[r].innerHTML = parseInt(children[r].innerHTML) + n;
+    }
+  }
+}
